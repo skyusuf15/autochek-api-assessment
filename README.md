@@ -19,7 +19,7 @@ This is a NestJS application that includes functionalities for managing vehicles
 
 - Node.js (v14.x or higher)
 - npm (v6.x or higher)
-- PostgreSQL (or another SQL database if preferred)
+- SQLite (:memory:)
 - An account with [RapidAPI](https://rapidapi.com/) for VIN lookup
 
 ## Setup

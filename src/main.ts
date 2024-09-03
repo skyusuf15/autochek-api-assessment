@@ -1,7 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { appPort } from './config';
-import morgan from 'morgan';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
 import { json } from 'express';
 import helmet from 'helmet';
@@ -17,7 +16,6 @@ async function bootstrap() {
 
   app.enableCors();
   app.use(helmet());
-  // app.use(morgan('tiny'));
   app.use(json({ limit: '100kb' }));
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
 

@@ -8,7 +8,6 @@ import { getTypeOrmConfig } from './config';
 import { VehicleModule } from './modules/vehicle/vehicle.module';
 import { LoanModule } from './modules/loan/loan.module';
 import { UserModule } from './modules/user/user.module';
-import { PassportModule } from '@nestjs/passport';
 import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
